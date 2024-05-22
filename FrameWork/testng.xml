@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ <suite name="MyDemoSuite11" >
+	 <listeners>
+		 <listener class-name="util.ReportUtil"/>
+	 </listeners>
+	  <parameter name="browser" value="Chrome"/>
+	  <test name="finalproject1">
+		 <classes> 
+			  <class name="tests.SimpleFormTest"/> 
+			  <class name="tests.RadioButtonTest"/> 
+			   <class name="tests.FormSubmitTest"/> 
+			    <class name="tests.ErrorFormSubmitTest"/> 
+			     <class name="tests.AjaxTest"/> 
+			      <class name="tests.JIQueryTest"/> 
+			       <class name="tests.WindowShiftTest"/> 
+			       <class name="tests.JavaPromptTest"/> 
+			       <class name="tests.Tabletesthashmap"/> 
+			       <!--class name="tests.DragandDropTest"/!--> 
+			   </classes> 
+		   </test>
+		    </suite>
