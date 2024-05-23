@@ -19,7 +19,7 @@ public class DriverIntializer {
 	 @Parameters({"browser"})
 	 @BeforeClass
 	public void setup(@Optional("Edge")String browser) throws IOException{
-		driver = createwebdriversession(browser);
+		driver = createWebDriverSession(browser);
 		driver.get(propertyReaderUtil.getproperty("URL"));
 		
 	}
@@ -30,7 +30,7 @@ public class DriverIntializer {
 		
 	}
 	
-	 public WebDriver createwebdriversession(String browser) {
+	 public WebDriver createWebDriverSession(String browser) {
 		// TODO Auto-generated method stub
 		
 		switch(browser){
